@@ -1,0 +1,70 @@
+Todo Jesus Maria a turno noche   2W50
+
+25 mayo primeras notas
+
+
+
+
+dserrano@frc.utn.edu.ar
+
+
+cschneider@frc.utn.edu.ar
+
+
+asistencia foros 18 30 a 21 30
+
+lunes laboratorio
+martes investigacion operativa
+miercoles contable
+jueves organizacion contable
+viernes programacion 
+
+
+---------------------------
+
+herramientas principales
+curso - legajo - apellido y nombre
+
+1- autogestion
+
+2- uvs
+
+3- zoom
+
+_______________
+Tareas para la semana que viene
+de Diego Javier Serrano - lunes, 6 de abril de 2020, 21:12
+Imagen de 2W1 - TURNO MAÑANA Imagen de 2W2 - TURNO NOCHE Imagen de 2W50 - TURNO NOCHE
+
+- Instalar NetBeans
+
+- Repetir el programa "Hola Mundo"
+
+- Repetir el programa de las variables y operaciones aritméticas
+
+- Ver los próximos videos.
+
+- Leer el tema de estructuras condicionales y repetitivas del apunte.
+
+- Resolver en diagrama de flujo
+
+    1 -  Hacer un programa que ingrese los datos de una factura en la cual haya tres artículos vendidos. De cada artículo ingresar el precio unitario y la cantidad. Finalmente imprimir el total de la factura
+
+    2- Ingresar nombre y altura de dos personas, informar el nombre de la más alta.
+
+
+-------------------------------------------------------------------------------------------------------
+Clase 13/04/20
+
+    Leer del apunte de la unidad 1 el tema de Programación Orientada a Objetos, desde la pagina 23 hasta el final.
+    Si no crearon la cuenta de github háganlo antes del viernes
+    Resolver los siguientes ejercicios haciendo un programa java por cada uno:
+        Una empresa de alquiler de autos cobra $300 por día si no se superan los 200 km de uso diario. Por cada km extra hasta los 1000 km cobra $5 adicionales, y a partir de los 1000 cobra $10 adicionales. Hacer un programa que solicite la cantidad de km realizados por un cliente e indique el importe que se le debe cobrar.
+        Desarrollar un programa que permita ingresar la antigüedad los autos de una concesionaria de usados. Finalizar la carga cuando se ingrese 0. Por cada auto ingresado mostrar por pantalla un mensaje adecuado con el siguiente criterio: si el auto tiene entre 1 y 5 años mostrar el texto “NUEVO”, si tiene entre 6 y 10 mostrar “POCO USO”, si tiene entre 11 y 20 “MUCHO USO” y si tiene más de 20 “MUY ANTIGUO”.
+        Luego de finalizada la carga calcular y mostrar los siguientes resultados:
+            Cantidad total de autos.
+            Cantidad de autos con poco uso.
+            Promedio de antigüedad de los autos que no sean muy antiguos. 
+
+
+-----------------------------------------------------------------------------------------------
