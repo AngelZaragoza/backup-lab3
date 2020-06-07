@@ -5,6 +5,16 @@ package lc3_un01_ligafutbol;
  *
  * @author Zaragoza Angel Gabriel
  */
+
+/*
+---------------------------------------
+Guía de Ejercicios Un. 1 - POO - Ej: 3
+---------------------------------------
+4.  Programar  una  clase  Partido  que  represente  a  un  partido  de  futbol.
+La misma  debe  contener  dos  atributos  de  tipo  Equipo  que  indiquen los
+equipos contendientes y atributos necesarios para indicar el resultado del mismo.
+*/
+
 public class Partido {
     //ATRIBUTOS
     private int fecha;

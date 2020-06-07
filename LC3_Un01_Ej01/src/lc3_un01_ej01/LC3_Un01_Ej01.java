@@ -6,6 +6,14 @@ import java.util.Scanner;
  *
  * @author Angel Gabriel Zaragoza
  */
+/*
+---------------------------------------
+Guía de Ejercicios Un. 1 -  - Ej: 1
+---------------------------------------
+1. Declarar dos variables enteras y cargar sus valores por teclado.
+Informar su suma, diferencia, producto y cociente. 
+*/
+
 public class LC3_Un01_Ej01 {
 
     

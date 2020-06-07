@@ -5,6 +5,13 @@ package lc3_un01_triangulos;
  *
  * @author Zaragoza Angel Gabriel
  */
+
+/*
+---------------------------------------
+Guía de Ejercicios Un. 1 - POO - Ej: 5
+---------------------------------------
+*/
+
 public class Triangulo {
     private int ladoA;
     private int ladoB;

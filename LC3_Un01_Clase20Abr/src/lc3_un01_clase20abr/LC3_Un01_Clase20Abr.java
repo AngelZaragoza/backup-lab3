@@ -6,8 +6,18 @@ import java.util.Scanner;
  *
  * @author Zaragoza Angel Gabriel
  */
-public class LC3_Un01_Clase20Abr {
+/*
+---------------------------------------
+Guía de Ejercicios Un. 1 - POO - Ej: 1
+---------------------------------------
+1.  Agregar  a  la  clase  persona  un método  que  retorne  su  índice  de masa 
+corporal. Este último dato se calcula como: 
 
+IMC = peso / altura2 
+*/
+
+public class LC3_Un01_Clase20Abr {
+    
     
     public static void main(String[] args) {
                 
@@ -27,17 +37,21 @@ public class LC3_Un01_Clase20Abr {
         String nombre;
         String apellido;
         int dni;
+        int anioNac;
         
-        System.out.print("Ingrese el nombre:");
+        System.out.print("Ingrese el nombre: ");
         nombre = teclado.nextLine();
         
-        System.out.print("Ingrese el apellido:");
+        System.out.print("Ingrese el apellido: ");
         apellido = teclado.nextLine();
         
-        System.out.print("Ingrese el DNI:");
+        System.out.print("Ingrese el DNI: ");
         dni = teclado.nextInt();
         
-        Persona p1 = new Persona(nombre, apellido, dni);
+        System.out.print("Ingrese el Año de Nacimiento: ");
+        anioNac = teclado.nextInt();
+        
+        Persona p1 = new Persona(nombre, apellido, dni, anioNac);
         p1.setPeso(90);
         p1.setAltura(1.9);
         

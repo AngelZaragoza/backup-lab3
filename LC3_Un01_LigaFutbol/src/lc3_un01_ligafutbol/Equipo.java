@@ -4,6 +4,17 @@ package lc3_un01_ligafutbol;
  *
  * @author Zaragoza Angel Gabriel
  */
+
+/*
+---------------------------------------
+Guía de Ejercicios Un. 1 - POO - Ej: 3
+---------------------------------------
+3. Programar una clase Equipo que represente a un equipo de fútbol. Incluir 
+en la misma atributos para almacenar el nombre del equipo y los datos relativos
+a un campeonato con forma de liga: puntos, cantidad de partidos ganados, empatados 
+y perdidos, cantidad de goles realizados y recibidos y posición. 
+*/
+
 public class Equipo {
     //ATRIBUTOS
     private String nombre;

@@ -6,6 +6,16 @@ import java.util.Scanner;
  *
  * @author Zaragoza Angel Gabriel
  */
+
+/*
+---------------------------------------
+Guía de Ejercicios Un. 1 - POO - Ej: 7
+---------------------------------------
+7. Una empresa de alquiler de autos cobra $300 por día si no se superan los 
+200 km de uso diario. Por cada km extra hasta los 1000 km cobra $5 adicionales,
+y a partir de los 1000 cobra $10 adicionales. Hacer un programa que solicite la
+cantidad de km realizados por un cliente e indique el importe que se le debe cobrar. 
+*/
 public class LC3_Un01_AutosAlquiler {
 
     public static void main(String[] args) {
@@ -32,12 +42,12 @@ public class LC3_Un01_AutosAlquiler {
             costoExtra += kmsExtra * 5;
             System.out.println("Kms excedidos de 200: " + kmsExtra);
             System.out.println("Extra $" + costoExtra);
-        }
+        }        
         
         //ACUMULAMOS LAS VARIABLES Y MOSTRAMOS
         total += costoExtra;
         System.out.println("\nEl costo total a abonar es $" + total);
-
+                
     }
 
 }

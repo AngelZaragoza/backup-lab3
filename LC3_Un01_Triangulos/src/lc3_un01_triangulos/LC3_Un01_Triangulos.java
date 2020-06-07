@@ -7,6 +7,15 @@ import java.util.Scanner;
  *
  * @author Zaragoza Angel Gabriel
  */
+
+/*
+---------------------------------------
+Guía de Ejercicios Un. 1 - POO - Ej: 5
+---------------------------------------
+Dado  el  valor  de  los  tres  lados  de  un  triángulo  se  necesita  calcular  su 
+perímetro. Se pide crear en el método main() un objeto y determinar si el perímetro 
+es superior a 10. Determinar la o las clases necesarias, sus atributos y métodos. 
+*/
 public class LC3_Un01_Triangulos {
 
     
@@ -49,7 +58,7 @@ public class LC3_Un01_Triangulos {
         Triangulo prueba3 = new Triangulo(a,b,c);
         System.out.println("3er Triángulo: " + prueba3);
         System.out.println("Perímetro:" + prueba3.calcPerimetro());
-        System.out.println(prueba2.muestraPerimetro());
+        System.out.println(prueba3.muestraPerimetro());
         
     }
     

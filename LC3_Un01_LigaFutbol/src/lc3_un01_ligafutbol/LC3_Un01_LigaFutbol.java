@@ -7,6 +7,13 @@ import java.util.Scanner;
  *
  * @author Zaragoza Angel Gabriel
  */
+
+/*
+------------------------------------------
+Guía de Ejercicios Un. 1 - POO - Ej: 3 y 4
+------------------------------------------
+*/
+
 public class LC3_Un01_LigaFutbol {
     
     public static void main(String[] args) {
