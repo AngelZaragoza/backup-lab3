@@ -5,7 +5,7 @@ package PruebaSwing;
  *
  * @author Zaragoza Angel Gabriel
  */
-public class Propiedad {
+public abstract class Propiedad {
     private String direccion;
     private int cantidadHabitaciones;
     private double precioAlquiler;
@@ -42,5 +42,6 @@ public class Propiedad {
         return cantidadInquilinos;
     }
     
-    
+    public abstract double precioAlquiler();
+        
 }
