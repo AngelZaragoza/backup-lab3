@@ -1,10 +1,20 @@
+/*
+---------------------------------------
+Guía de Ejercicios Unidad 2
+Arreglos y Colecciones - Ej: 3
+---------------------------------------
+--- Consignas Varias ---
+*/
+
 package lc3_un02_empresacanios;
 
 /**
  *
  * @author Zaragoza Angel Gabriel
  */
-//Punto 2:
+
+/*2. Desarrolle la clase Producto de manera que contenga en su interior los 
+atributos descripción (String) y Materiales (Material[]). */
 public class Producto {
 
     private String descripcion;
@@ -14,7 +24,8 @@ public class Producto {
     public Producto() {
     }
 
-    //Punto 3:
+    /*3. Desarrolle en la clase Producto un constructor que reciba por parámetro
+    una cantidad de elementos y dimensione el vector de materiales. */
     public Producto(String descripcion, int cantElementos) {
         this.descripcion = descripcion;
         materiales = new Material[cantElementos];
@@ -25,7 +36,8 @@ public class Producto {
     }
 
     //METODOS
-    //Punto 4:
+    /*4. Desarrolle en la clase Producto un método que permita agregar un Material 
+    recibido por parámetro al vector. */
     public void agregarMaterial(Material mat) {
         for (int i = 0; i < materiales.length; i++) {
             if (materiales[i] == null) {
@@ -36,7 +48,9 @@ public class Producto {
         }
     }
 
-    //Punto 5:
+    /*5. Desarrolle en la clase Producto un método que retorne el costo total.
+    Dicho valor se calcula sumando todos los valores unitarios de los Materiales
+    que componen el Producto. */
     public float costoTotal() {
         float acumCosto = 0;
         for (int i = 0; i < materiales.length; i++) {
@@ -49,7 +63,8 @@ public class Producto {
         return acumCosto;
     }
 
-    //Punto 6:
+    /*6. Desarrolle en la clase Producto un método que reciba por parámetro un código 
+    de material y retorne true si dicho material forma parte del Producto. */
     public boolean usaMaterial(int codigoMat) {
         for (int i = 0; i < materiales.length; i++) {
             if (materiales[i] != null) {
@@ -61,7 +76,8 @@ public class Producto {
         return false;
     }
 
-    //Punto 7:
+    /*7. Desarrolle en la clase producto un método que retorne un vector con todos
+    los materiales que tengan un valor unitario menor a un parámetro. */
     public Material[] materialesCostoMenorA(float valor) {
         //Buscamos la posición del último elemento cargado 
         //para recuperar la cantidad de materiales cargados
@@ -96,7 +112,11 @@ public class Producto {
         }            
     }
 
-    //Punto 8:
+    /*8. Desarrolle en la clase producto un método que retorne un vector donde cada 
+    casillero contenga la cantidad de materiales por precio, siguiendo las siguiente 
+    regla: Si 0 < precio ≤ 10 contarlo en el primer casillero. Si 10 < precio ≤ 20 
+    contarlo en el segundo casillero. Si 20 < precio ≤ 30 contarlo en el tercer 
+    casillero. Si precio > 30 contarlo en el cuarto casillero. */
     public int[] matPorRangoPrecio() {
         int[] rangoPrecios = {0, 0, 0, 0};
         float precio;

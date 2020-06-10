@@ -1,4 +1,11 @@
-
+/*
+---------------------------------------
+Guía de Ejercicios Unidad 2
+Arreglos y Colecciones - Ej: 3
+---------------------------------------
+ Desarrolle la clase Material de manera que contenga en su interior los 
+atributos: descripción (String) código(int) valorUnitario (float). 
+*/
 package lc3_un02_empresacanios;
 
 /**

@@ -1,3 +1,13 @@
+/*
+---------------------------------------
+Guía de Ejercicios Unidad 2
+Arreglos y Colecciones - Ej: 2
+---------------------------------------
+2. Una Veterinaria encargada del cuidado de mascotas ha solicitado la realización 
+de un software para obtener resultados sobre sus clientes y sus
+respectivas mascotas. (Suponer que cada cliente posee una sola mascota) 
+*/
+
 package lc3_un02_veterinaria;
 
 /**
@@ -45,11 +55,8 @@ public class Cliente {
     public void setAntiguedad(int antiguedad) {
         this.antiguedad = antiguedad;
     }
-
-    public void agregarMascota (int codigo, String nombre, int edad) {
-        mascota = new Mascota(codigo, nombre, edad);        
-    }
-    
+        
+    //METODOS
     public void agregarMascota (Mascota masc) {
         mascota = masc;
     }

@@ -1,3 +1,16 @@
+/*
+---------------------------------------
+Guía de Ejercicios Unidad 2
+Arreglos y Colecciones - Ej: 4
+---------------------------------------
+4. Una biblioteca necesita un software que le permita registrar los datos
+de los libros que posee y de sus préstamos. De cada libro conoce su título,
+precio de reposición (para el caso de extravíos o daños) y estado
+(1: disponible, 2: prestado, 3: extraviado). 
+Por otro lado, cada vez que un libro es prestado se registra el nombre del 
+solicitante, la cantidad de días del préstamo y si fue devuelto o no.
+El conjunto de préstamos debe ser almacenado como un atributo del libro en cuestión. 
+*/
 
 package lc3_un02_biblioteca;
 

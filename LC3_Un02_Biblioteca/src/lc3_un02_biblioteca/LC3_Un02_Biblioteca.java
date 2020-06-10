@@ -1,3 +1,27 @@
+/*
+---------------------------------------
+Guía de Ejercicios Unidad 2
+Arreglos y Colecciones - Ej: 4
+---------------------------------------
+4. Una biblioteca necesita un software que le permita registrar los datos
+de los libros que posee y de sus préstamos. De cada libro conoce su título,
+precio de reposición (para el caso de extravíos o daños) y estado
+(1: disponible, 2: prestado, 3: extraviado). 
+Por otro lado, cada vez que un libro es prestado se registra el nombre del 
+solicitante, la cantidad de días del préstamo y si fue devuelto o no.
+El conjunto de préstamos debe ser almacenado como un atributo del libro en cuestión. 
+Se necesita entonces un programa en Java que solicite por teclado los datos 
+de los libros y sus préstamos y luego de finalizada la carga informe:
+
+ Cantidad de libros en cada estado (tres totales) 
+ Sumatoria del precio de reposición de todos los libros extraviados 
+ Nombre de todos los solicitantes de un libro en particular identificado por su 
+título 
+ Promedio de veces que fueron prestados los libros de la biblioteca. Es decir, 
+se debe responder a la consulta de cuántas veces es prestado en promedio 
+cada libro 
+*/
+
 package lc3_un02_biblioteca;
 
 import java.util.Scanner;
@@ -107,7 +131,7 @@ public class LC3_Un02_Biblioteca {
             int cantLibros = 0;
 
             while (cantLibros <= 0) {                
-                System.out.println("Ingrese cantidad de Libros de la Biblioteca");
+                System.out.print("Ingrese cantidad de Libros de la Biblioteca -> ");
                 cantLibros = teclado.nextInt();
                 if (cantLibros <= 0)
                     System.out.println("Ingrese una cantidad positiva");                
@@ -141,8 +165,8 @@ public class LC3_Un02_Biblioteca {
                         break;
                     case 1:
                         if (cantLibros > 0) {
-                            System.out.print("Libro - Ingrese TITULO -> ");
                             teclado.nextLine();
+                            System.out.print("Libro - Ingrese TITULO -> ");                            
                             titLibro = teclado.nextLine();
                             System.out.print("Libro - Ingrese PRECIO -> ");
                             precioLibro = teclado.nextFloat();
@@ -169,15 +193,15 @@ public class LC3_Un02_Biblioteca {
                         break;
                     case 2:
                         if (carga) {
-                            System.out.print("Ingrese Libro a Prestar -> ");
                             teclado.nextLine();
+                            System.out.print("Ingrese Libro a Prestar -> ");                            
                             titLibro = teclado.nextLine();
                             
                             if (biblioNormal.existeLibro(titLibro) >= 0) {
 
                                 boolean devuelto = false;
-                                System.out.print("Préstamo - NOMBRE Solicitante -> ");
-                                teclado.nextLine();
+                                //teclado.nextLine();
+                                System.out.print("Préstamo - NOMBRE Solicitante -> ");                                
                                 String solic = teclado.nextLine();
                                 System.out.print("Préstamo - Cantidad de DIAS-> ");
                                 int cantDias = teclado.nextInt();
@@ -190,8 +214,9 @@ public class LC3_Un02_Biblioteca {
                                 Prestamo nvoPres = new Prestamo(solic, cantDias, devuelto);
                                 biblioNormal.agregarPrestamo(titLibro, nvoPres);
                                 
-                            } else {
-                                System.out.println("\tEl Libro no existe o no está cargado");
+                            } else {                                
+                                System.out.println("El Libro no existe o no está cargado");
+                                
                             }                            
                         } else {
                             noHayCarga();
@@ -215,22 +240,31 @@ public class LC3_Un02_Biblioteca {
                     
                     case 5:
                         if (carga) {
-                            System.out.print("Ingrese Título del Libro -> ");                
+                            System.out.print("Ingrese Título del Libro -> ");
                             teclado.nextLine();
                             titLibro = teclado.nextLine();
-                            biblioNormal.listadoSolicitantes(titLibro);
+                            System.out.println(biblioNormal.listadoSolicitantes(titLibro));
                         } else {
                             noHayCarga();
                         }
                         break;
                         
                     case 98:
-                        System.out.println("A implementar");
+                        if (carga) {
+                            System.out.print("Ingrese Título del Libro -> ");
+                            teclado.nextLine();
+                            titLibro = teclado.nextLine();
+                            System.out.print("Confirma registración de Extravío? (s / n) -> ");
+                            String confirma = teclado.nextLine();
+                            System.out.println(biblioNormal.registrarExtravio(titLibro, confirma));
+                        } else {
+                            noHayCarga();
+                        }
                         break;
                     
                     case 99:
                         if (carga)
-                            biblioNormal.toString();
+                            System.out.println(biblioNormal.toString());
                         else
                             noHayCarga();
                         break;
@@ -241,7 +275,7 @@ public class LC3_Un02_Biblioteca {
                 if (opcion != 0) {
                     System.out.print("\tEnter para continuar...");
                     teclado.nextLine();
-                    teclado.nextLine();
+                    teclado.nextLine();                    
                 }
                 
             } while (opcion != 0);

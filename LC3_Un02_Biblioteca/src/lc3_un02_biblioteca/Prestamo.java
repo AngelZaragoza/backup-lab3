@@ -1,3 +1,9 @@
+/*
+---------------------------------------
+Guía de Ejercicios Unidad 2
+Arreglos y Colecciones - Ej: 4
+---------------------------------------
+*/
 
 package lc3_un02_biblioteca;
 

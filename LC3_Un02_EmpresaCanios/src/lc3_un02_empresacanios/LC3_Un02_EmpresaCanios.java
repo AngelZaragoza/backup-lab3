@@ -1,3 +1,20 @@
+/*
+---------------------------------------
+Guía de Ejercicios Unidad 2
+Arreglos y Colecciones - Ej: 3
+---------------------------------------
+3. Una empresa que fabrica caños de diferentes tipos, materiales y medidas está 
+desarrollando un sistema para automatizar la planificación y control de su
+circuito productivo. Suponga que usted es parte del equipo de desarrollo
+y  le asignan la siguiente tarea:
+
+ Desarrolle la clase Material de manera que contenga en su interior los 
+atributos: descripción (String) código(int) valorUnitario (float). 
+ Desarrolle la clase Producto de manera que contenga en su interior los 
+atributos descripción (String) y Materiales (Material[]).
+--- Consignas adicionales en las Clases ---
+*/
+
 package lc3_un02_empresacanios;
 
 import java.util.Scanner;
